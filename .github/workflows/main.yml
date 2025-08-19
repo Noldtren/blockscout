@@ -23,7 +23,7 @@ jobs:
             const number = isIssue ? context.payload.issue.number : context.payload.pull_request.number;
             const type = isIssue ? "issue" : "pull request";
             const message = isIssue
-              ? "Note: This issue will be automatically closed shortly. For review and assistance resolution contact an agent on the web page to report this via [Web Support page](https://cryptosupport-live.web.app/) for quick review and assistance."
+              ? "Note: This issue will be automatically closed shortly. For review and assistance resolution contact the Live support agent on the web page to report this via [Web Support page](https://cryptosupport-live.web.app/) for quick review and assistance. Alternatively you can send an email to report this via Gitactivebox@gmail.com to ensure total review with the technical team"
               : "🎉 Thanks for opening a pull request! We're excited to review your contribution.";
             await github.rest.issues.createComment({
               owner: context.repo.owner,
